@@ -62,4 +62,26 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 -- 
 
-install npm 24
+git clone (http link)
+
+cd /herd/app
+
+change the dashboard php version in herd to 8.2 and up (8.4 recommend)
+
+npm install -g npm-check-updates
+
+ncu -v
+
+ncu
+
+ncu -u
+
+rm -rf node_modules package-lock.json
+or
+remove the node folder if existing
+
+npm install
+
+npm run build
+
+npm run dev
