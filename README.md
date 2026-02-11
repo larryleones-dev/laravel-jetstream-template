@@ -85,3 +85,5 @@ npm install
 npm run build
 
 npm run dev
+
+go to this commit and follow the instructions 9276196af9d9525ae77c080ed6504a6f7bd5e515
