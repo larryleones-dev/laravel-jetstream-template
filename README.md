@@ -2,7 +2,9 @@ git clone (http link)
 
 cd /herd/app
 
-change the dashboard php version in herd to 8.2 and up (8.4 recommend)
+nvm use 22
+
+composer intall
 
 npm install -g npm-check-updates
 
@@ -22,4 +24,21 @@ npm run build
 
 npm run dev
 
-go to this commit and follow the instructions 9276196af9d9525ae77c080ed6504a6f7bd5e515
+edit the .env
+-- START
+DB_CONNECTION=sqlite
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel-jetstream-template
+DB_USERNAME=root
+DB_PASSWORD=admin
+
+APP_URL=http://laravel-jetstream-template.test
+-- END
+
+php artisan key:generate
+
+php artisan migrate
+
+then yes if not existed on your db
+
