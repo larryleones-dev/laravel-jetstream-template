@@ -2,7 +2,7 @@ git clone (http link)
 
 cd /herd/app
 
-nvm use 22
+nvm use 22 (use ndoe 22 and php 8.2 in herd)
 
 composer intall
 
